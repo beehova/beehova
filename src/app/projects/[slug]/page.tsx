@@ -23,7 +23,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
     return (
         <main className="min-h-screen bg-white">
-            <Navbar />
+            <Navbar onContactClick={() => {}}/>
 
             <section className="px-5 pb-24 pt-32">
                 <div className="mx-auto max-w-6xl">
