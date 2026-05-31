@@ -6,7 +6,13 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { FaInstagram, FaBehance, FaLinkedinIn } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function Navbar() {
+type NavbarProps = {
+    onContactClick: () => void;
+};
+
+export default function Navbar({
+                                   onContactClick,
+                               }: NavbarProps) {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -65,13 +71,13 @@ export default function Navbar() {
                     </div>
 
                     {/* DESKTOP BUTTON */}
-                    <a
-                        href="#contact"
+                    <button
+                        onClick={onContactClick}
                         className="hidden items-center gap-2 rounded-full border border-[#FFB800] px-6 py-3 text-sm font-semibold transition hover:bg-[#FFB800] md:flex"
                     >
                         Let&apos;s Talk
                         <ArrowUpRight size={17} />
-                    </a>
+                    </button>
 
                     {/* MOBILE BUTTON */}
                     <button

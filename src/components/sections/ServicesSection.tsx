@@ -42,7 +42,13 @@ const services = [
     },
 ];
 
-export default function ServicesSection() {
+type ServicesSectionProps = {
+    onContactClick: () => void;
+};
+
+export default function ServicesSection({
+                                            onContactClick,
+                                        }: ServicesSectionProps) {
     return (
         <section
             id="services"
@@ -139,12 +145,12 @@ export default function ServicesSection() {
                             </h3>
                         </div>
 
-                        <a
-                            href="#contact"
+                        <button
+                            onClick={onContactClick}
                             className="rounded-full bg-[#FFB800] px-7 py-4 text-sm font-bold text-black transition hover:scale-[1.03]"
                         >
                             Contattaci
-                        </a>
+                        </button>
                     </div>
                 </motion.div>
             </div>

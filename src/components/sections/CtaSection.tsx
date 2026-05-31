@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { fadeUp } from "@/lib/motion";
 
-export default function CtaSection() {
+type CtaSectionProps = {
+    onContactClick: () => void;
+};
+
+export default function CtaSection({
+                                       onContactClick,
+                                   }: CtaSectionProps) {
     return (
         <section className="relative overflow-hidden bg-white px-5 py-24">
             {/* BLUR */}
@@ -42,19 +48,19 @@ export default function CtaSection() {
                     </div>
 
                     {/* BUTTON */}
-                    <motion.a
+                    <motion.button
                         whileHover={{
                             scale: 1.05,
                         }}
                         whileTap={{
                             scale: 0.96,
                         }}
-                        href="#contact"
+                        onClick={onContactClick}
                         className="flex items-center gap-3 rounded-full bg-[#FFB800] px-8 py-5 text-base font-bold text-black shadow-[0_18px_45px_rgba(255,184,0,0.35)]"
                     >
                         Inizia il tuo progetto
                         <ArrowUpRight size={22} />
-                    </motion.a>
+                    </motion.button>
                 </div>
             </motion.div>
         </section>

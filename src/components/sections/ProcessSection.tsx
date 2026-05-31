@@ -37,7 +37,13 @@ const steps = [
     },
 ];
 
-export default function ProcessSection() {
+type ProcessSectionProps = {
+    onContactClick: () => void;
+};
+
+export default function ProcessSection({
+                                           onContactClick,
+                                       }: ProcessSectionProps) {
     return (
         <section
             id="process"
@@ -109,13 +115,13 @@ export default function ProcessSection() {
                 </div>
 
                 <div className="mt-14 flex justify-center">
-                    <a
-                        href="#contact"
+                    <button
+                        onClick={onContactClick}
                         className="flex w-full max-w-[420px] items-center justify-center gap-4 rounded-full border border-[#FFB800] px-8 py-5 text-base font-bold text-[#FFB800] transition hover:bg-[#FFB800] hover:text-black"
                     >
                         Inizia il tuo progetto
                         <Rocket size={20} />
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>

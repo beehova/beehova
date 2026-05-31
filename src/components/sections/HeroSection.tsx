@@ -15,7 +15,11 @@ import {
     fadeUp,
 } from "@/lib/motion";
 
-export default function HeroSection() {
+type HeroSectionProps = {
+    onContactClick: () => void;
+};
+
+export default function HeroSection({ onContactClick }: HeroSectionProps) {
     return (
         <section
             id="home"

@@ -1,3 +1,5 @@
+"use client"
+
 import Navbar from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -9,14 +11,21 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CtaSection from "@/components/sections/CtaSection";
 import Footer from "@/components/layout/Footer";
 
+import { useState } from "react";
+import ContactPopup from "@/components/ui/ContactPopup";
+
 import { FaWhatsapp } from "react-icons/fa";
-import ContactModal from "@/components/ui/ContactModal";
+
 
 export default function Home() {
+    const [contactOpen, setContactOpen] = useState(false);
     return (
         <main className="overflow-hidden">
-            <Navbar />
-            <ContactModal />
+            <Navbar onContactClick={() => setContactOpen(true)}/>
+            <ContactPopup
+                open={contactOpen}
+                onClose={() => setContactOpen(false)}
+            />
 
             <a
                 href="https://wa.me/39123456789"
@@ -27,21 +36,21 @@ export default function Home() {
                 <FaWhatsapp size={34} />
             </a>
 
-            <HeroSection />
+            <HeroSection onContactClick={() => setContactOpen(true)}/>
 
             <AboutSection />
 
-            <ServicesSection />
+            <ServicesSection onContactClick={() => setContactOpen(true)}/>
 
             <ProjectsSection />
 
-            <ProcessSection />
+            <ProcessSection onContactClick={() => setContactOpen(true)}/>
 
             <WhyUsSection />
 
             <TestimonialsSection />
 
-            <CtaSection />
+            <CtaSection onContactClick={() => setContactOpen(true)}/>
 
             <Footer />
         </main>
