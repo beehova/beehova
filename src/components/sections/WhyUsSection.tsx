@@ -45,7 +45,7 @@ export default function WhyUsSection() {
             className="relative overflow-hidden bg-white px-5 py-24"
         >
             {/* BLUR */}
-            <div className="absolute left-[-120px] top-10 h-[280px] w-[280px] rounded-full bg-[#FFB800]/10 blur-[110px]" />
+            <div className="absolute left-[-120px] top-10 h-[280px] w-[280px] rounded-full bg-[#FFB800]/10 blur-[60px]" />
 
             <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
 
@@ -129,7 +129,7 @@ export default function WhyUsSection() {
                     className="relative"
                 >
                     {/* MAIN BOX */}
-                    <div className="relative overflow-hidden rounded-[42px] bg-[#FFF9E8] p-10 shadow-[0_25px_80px_rgba(255,184,0,0.12)]">
+                    <div className="relative overflow-hidden rounded-[42px] bg-[#FFF9E8] p-10 shadow-lg_rgba(255,184,0,0.12)]">
 
                         {/* MINI SHAPES */}
                         <div className="absolute right-10 top-10 h-16 w-16 rounded-[24px] border border-[#FFB800]/20 rotate-12" />

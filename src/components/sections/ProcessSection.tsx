@@ -43,7 +43,7 @@ export default function ProcessSection() {
             id="process"
             className="relative overflow-hidden bg-[#FFFDF8] px-5 py-24 text-black"
         >
-            <div className="absolute right-[-120px] top-20 h-72 w-72 rounded-full bg-[#FFB800]/10 blur-[110px]" />
+            <div className="absolute right-[-120px] top-20 h-72 w-72 rounded-full bg-[#FFB800]/10 blur-[60px]" />
 
             <div className="relative z-10 mx-auto max-w-7xl">
                 <motion.div
@@ -80,7 +80,7 @@ export default function ProcessSection() {
                                 viewport={{ once: true, amount: 0.2 }}
                                 variants={fadeUp}
                                 whileHover={{ y: -8 }}
-                                className="group relative rounded-[32px] border border-black/5 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#FFB800]/40 hover:shadow-[0_25px_80px_rgba(255,184,0,0.14)]"
+                                className="group relative rounded-[32px] border border-black/5 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#FFB800]/40 hover:shadow-lg_rgba(255,184,0,0.14)]"
                             >
                                 <div className="mb-6 flex items-center justify-between lg:flex-col lg:items-start lg:gap-6">
                                     <div className="flex h-16 w-16 items-center justify-center rounded-3xl border border-[#FFB800]/40 text-[#FFB800] transition group-hover:bg-[#FFB800] group-hover:text-black">

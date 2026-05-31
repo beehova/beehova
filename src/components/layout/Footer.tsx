@@ -18,7 +18,7 @@ export default function Footer() {
             className="relative overflow-hidden bg-[#FFFDF8] px-5 pt-24"
         >
             {/* BLUR */}
-            <div className="absolute right-[-120px] bottom-[-120px] h-[280px] w-[280px] rounded-full bg-[#FFB800]/10 blur-[110px]" />
+            <div className="absolute right-[-120px] bottom-[-120px] h-[280px] w-[280px] rounded-full bg-[#FFB800]/10 blur-[60px]" />
 
             <div className="relative z-10 mx-auto max-w-7xl">
 

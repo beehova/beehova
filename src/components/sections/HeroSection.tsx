@@ -22,7 +22,7 @@ export default function HeroSection() {
             className="relative overflow-hidden bg-white px-5 pb-16 pt-32"
         >
             {/* BLUR BACKGROUNDS */}
-            <div className="absolute left-[-120px] top-[120px] h-[280px] w-[280px] rounded-full bg-[#FFB800]/20 blur-[110px]" />
+            <div className="absolute left-[-120px] top-[120px] h-[280px] w-[280px] rounded-full bg-[#FFB800]/20 blur-[60px]" />
 
             <div className="absolute bottom-[-120px] right-[-120px] h-[320px] w-[320px] rounded-full bg-[#FFB800]/15 blur-[120px]" />
 
@@ -173,7 +173,7 @@ export default function HeroSection() {
                             y: [0, -18, 0],
                         }}
                         transition={{
-                            repeat: Infinity,
+                            repeat: 1,
                             duration: 5,
                         }}
                         className="absolute left-8 top-10 h-20 w-20 rounded-[30px] border border-[#FFB800]/20 rotate-12"
@@ -184,7 +184,7 @@ export default function HeroSection() {
                             y: [0, 15, 0],
                         }}
                         transition={{
-                            repeat: Infinity,
+                            repeat: 1,
                             duration: 6,
                         }}
                         className="absolute right-10 top-24 h-14 w-14 rounded-[20px] border border-[#FFB800]/20 -rotate-12"
@@ -196,7 +196,7 @@ export default function HeroSection() {
                             y: [0, -12, 0],
                         }}
                         transition={{
-                            repeat: Infinity,
+                            repeat: 1,
                             duration: 4,
                         }}
                         className="relative z-10"

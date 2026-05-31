@@ -28,7 +28,7 @@ export default function TestimonialsSection() {
             id="testimonials"
             className="relative overflow-hidden bg-[#FFFDF8] px-5 py-24"
         >
-            <div className="absolute right-[-120px] top-20 h-72 w-72 rounded-full bg-[#FFB800]/10 blur-[110px]" />
+            <div className="absolute right-[-120px] top-20 h-72 w-72 rounded-full bg-[#FFB800]/10 blur-[60px]" />
 
             <div className="relative z-10 mx-auto max-w-7xl">
                 <motion.div
@@ -62,7 +62,7 @@ export default function TestimonialsSection() {
                             variants={fadeUp}
                             transition={{ delay: index * 0.08 }}
                             whileHover={{ y: -8 }}
-                            className="group rounded-[34px] border border-black/5 bg-white p-7 shadow-sm transition-all duration-300 hover:border-[#FFB800]/40 hover:shadow-[0_25px_80px_rgba(255,184,0,0.14)]"
+                            className="group rounded-[34px] border border-black/5 bg-white p-7 shadow-sm transition-all duration-300 hover:border-[#FFB800]/40 hover:shadow-lg_rgba(255,184,0,0.14)]"
                         >
                             <Quote
                                 size={34}
