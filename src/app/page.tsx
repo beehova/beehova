@@ -10,11 +10,13 @@ import CtaSection from "@/components/sections/CtaSection";
 import Footer from "@/components/layout/Footer";
 
 import { FaWhatsapp } from "react-icons/fa";
+import ContactModal from "@/components/ui/ContactModal";
 
 export default function Home() {
     return (
         <main className="overflow-hidden">
             <Navbar />
+            <ContactModal />
 
             <a
                 href="https://wa.me/39123456789"
