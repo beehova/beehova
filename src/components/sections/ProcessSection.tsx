@@ -49,7 +49,7 @@ export default function ProcessSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeUp}
                     className="max-w-3xl"
                 >
@@ -77,7 +77,7 @@ export default function ProcessSection() {
                                 key={step.number}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: false, amount: 0.2 }}
+                                viewport={{ once: true, amount: 0.2 }}
                                 variants={fadeUp}
                                 whileHover={{ y: -8 }}
                                 className="group relative rounded-[32px] border border-black/5 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#FFB800]/40 hover:shadow-[0_25px_80px_rgba(255,184,0,0.14)]"

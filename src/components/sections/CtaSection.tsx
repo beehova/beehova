@@ -13,7 +13,7 @@ export default function CtaSection() {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
                 variants={fadeUp}
                 className="relative z-10 mx-auto max-w-7xl overflow-hidden rounded-[42px] bg-black px-8 py-16 text-white md:px-16"
             >

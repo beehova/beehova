@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import FloatingElements from "@/components/ui/FloatingElements";
-import ScrollIndicator from "@/components/ui/ScrollIndicator";
 import {
     ArrowUpRight,
     Folder,
@@ -23,8 +21,6 @@ export default function HeroSection() {
             id="home"
             className="relative overflow-hidden bg-white px-5 pb-16 pt-32"
         >
-            <FloatingElements />
-            <ScrollIndicator />
             {/* BLUR BACKGROUNDS */}
             <div className="absolute left-[-120px] top-[120px] h-[280px] w-[280px] rounded-full bg-[#FFB800]/20 blur-[110px]" />
 
@@ -37,7 +33,7 @@ export default function HeroSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeLeft}
                 >
                     {/* BADGE */}
@@ -90,7 +86,7 @@ export default function HeroSection() {
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.25 }}
+                            viewport={{ once: true, amount: 0.25 }}
                             variants={fadeUp}
                             whileHover={{ y: -6 }}
                             className="rounded-3xl border border-black/5 bg-[#FAFAFA] p-5 transition"
@@ -115,7 +111,7 @@ export default function HeroSection() {
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.25 }}
+                            viewport={{ once: true, amount: 0.25 }}
                             variants={fadeUp}
                             whileHover={{ y: -6 }}
                             className="rounded-3xl border border-black/5 bg-[#FAFAFA] p-5 transition"
@@ -140,7 +136,7 @@ export default function HeroSection() {
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.25 }}
+                            viewport={{ once: true, amount: 0.25 }}
                             variants={fadeUp}
                             whileHover={{ y: -6 }}
                             className="rounded-3xl border border-black/5 bg-[#FAFAFA] p-5 transition"
@@ -167,7 +163,7 @@ export default function HeroSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeRight}
                     className="relative"
                 >

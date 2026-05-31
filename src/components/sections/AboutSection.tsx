@@ -16,7 +16,7 @@ export default function AboutSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeLeft}
                 >
                     <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#FFB800]">
@@ -42,7 +42,7 @@ export default function AboutSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeRight}
                     className="grid gap-5"
                 >

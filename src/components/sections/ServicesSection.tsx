@@ -57,7 +57,7 @@ export default function ServicesSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeLeft}
                     className="max-w-3xl"
                 >
@@ -85,7 +85,7 @@ export default function ServicesSection() {
                                 key={service.title}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: false, amount: 0.2 }}
+                                viewport={{ once: true, amount: 0.2 }}
                                 variants={fadeUp}
                                 transition={{
                                     delay: index * 0.08,
@@ -124,7 +124,7 @@ export default function ServicesSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeRight}
                     className="mt-16 rounded-[40px] bg-black px-8 py-10 text-white md:px-14"
                 >

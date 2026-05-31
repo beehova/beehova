@@ -14,7 +14,7 @@ export default function ProjectsSection() {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.25 }}
+                    viewport={{ once: true, amount: 0.25 }}
                     variants={fadeUp}
                     className="max-w-3xl"
                 >
@@ -38,7 +38,7 @@ export default function ProjectsSection() {
                             key={project.slug}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.2 }}
+                            viewport={{ once: true, amount: 0.2 }}
                             variants={fadeUp}
                             whileHover={{ y: -8 }}
                             className="group overflow-hidden rounded-[36px] bg-white shadow-sm"

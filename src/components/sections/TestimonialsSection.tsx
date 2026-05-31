@@ -58,7 +58,7 @@ export default function TestimonialsSection() {
                             key={item.name}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.2 }}
+                            viewport={{ once: true, amount: 0.2 }}
                             variants={fadeUp}
                             transition={{ delay: index * 0.08 }}
                             whileHover={{ y: -8 }}
